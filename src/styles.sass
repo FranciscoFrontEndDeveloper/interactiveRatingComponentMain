@@ -6,7 +6,6 @@
 /* Author: Richard Clark - http://richclarkdesign.com  */
 /* Twitter: @rich_clark  */
 
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -90,9 +89,6 @@ hr
 input, select
  vertical-align: middle
 
-
-
-
 //Front-end Style Varibles
 
 //Layout
@@ -110,12 +106,19 @@ $Orange: hsl(25, 97%, 53%)
 
 $White: hsl(0, 0%, 100%)
 $LightGrey: hsl(217, 12%, 63%)
-$MediumGrey: hsl(216, 12%, 54%)
-$DarkBlue: hsl(213, 19%, 18%)
-$VeryDarkBlue: hsl(216, 12%, 8%)
+$MediumGrey: #262F38
+$DarkBlue: #1C232D
+$VeryDarkBlue: #141519
 
 //Typography
 
 //Body Copy
 
 $Fontsizeparagraph: 15px
+$fontWeigth: 400
+
+//mixins sass
+@mixin textStyles($fontSize, $fontWeight, $color)
+ font-size: $fontSize
+ color: $color
+ font-weight: $fontWeight

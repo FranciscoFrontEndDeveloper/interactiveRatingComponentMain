@@ -1,6 +1,25 @@
 <section class="containerSectionCard">
-  <div>divisiones</div>
-  <div>divisiones</div>
-  <div>divisiones</div>
-  <div>divisiones</div>
+  <div>
+    <app-input-button
+      [inputType]="typeImage"
+      [inputSrc]="inputImg"
+      
+    ></app-input-button>
+  </div>
+  <div>
+    <app-text></app-text>
+  </div>
+  <div>
+    <app-input-button
+      [inputType]="typeButton"
+      *ngFor="let numberButton of numberButtons"
+      [ArryNumbers]="numberButton"
+    ></app-input-button>
+  </div>
+  <div>
+    <app-input-button
+      [inputType]="typesubmit"
+      [ArryNumbers]="typesubmit"
+    ></app-input-button>
+  </div>
 </section>
