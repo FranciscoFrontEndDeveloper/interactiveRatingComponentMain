@@ -1,9 +1,10 @@
 <section class="containerSectionCard">
+<form action="">
   <div>
     <app-input-button
-      [inputType]="typeImage"
-      [inputSrc]="inputImg"
-      
+    [inputType]="typeImage"
+    [inputSrc]="inputImg"
+    
     ></app-input-button>
   </div>
   <div>
@@ -11,15 +12,17 @@
   </div>
   <div>
     <app-input-button
-      [inputType]="typeButton"
-      *ngFor="let numberButton of numberButtons"
-      [ArryNumbers]="numberButton"
+    [inputType]="typeButton"
+    *ngFor="let numberButton of numberButtons"
+    [ArryNumbers]="numberButton"
     ></app-input-button>
   </div>
   <div>
     <app-input-button
-      [inputType]="typesubmit"
-      [ArryNumbers]="typesubmit"
+    [inputType]="typesubmit"
+    [ArryNumbers]="typesubmit"
     ></app-input-button>
   </div>
+</form>
 </section>
+
