@@ -7,6 +7,7 @@ import { MainComponent } from './components/main/main.component';
 import { CardmainComponent } from './components/cardmain/cardmain.component';
 import { TextComponent } from './components/text/text.component';
 import { InputButtonComponent } from './components/input-button/input-button.component';
+import { SecondaryComponent } from './components/secondary/secondary.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InputButtonComponent } from './components/input-button/input-button.com
     MainComponent,
     CardmainComponent,
     TextComponent,
-    InputButtonComponent
+    InputButtonComponent,
+    SecondaryComponent
   ],
   imports: [
     BrowserModule,
