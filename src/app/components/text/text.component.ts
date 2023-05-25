@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-text',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./text.component.sass']
 })
 export class TextComponent {
-
+  @Input() textTitleChildren: string = ''
+  @Input() textParagraphChildren: string = ''
 }

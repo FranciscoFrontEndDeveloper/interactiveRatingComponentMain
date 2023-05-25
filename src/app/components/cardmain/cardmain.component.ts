@@ -13,6 +13,8 @@ export class CardmainComponent {
   typesubmit: string = 'submit';
   inputImg: string = '../../../assets/icon-star.svg';
   pruebaNumero!: string;
+  textTitleFather: string = 'How did we do?'
+  textParagraphFather: string = 'Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!'
   constructor(private router: Router) {}
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.

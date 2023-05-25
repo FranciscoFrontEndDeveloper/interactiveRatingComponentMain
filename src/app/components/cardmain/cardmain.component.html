@@ -6,14 +6,16 @@
     ></app-input-button>
   </div>
   <div>
-    <app-text></app-text>
+    <app-text
+      [textTitleChildren]="textTitleFather"
+      [textParagraphChildren]="textParagraphFather"
+    ></app-text>
   </div>
   <div>
     <app-input-button
       [inputType]="typeButton"
       *ngFor="let numberButton of numberButtons"
       [ArryNumbers]="numberButton"
-      
       (click)="captureOptionNumber(numberButton)"
     ></app-input-button>
   </div>
