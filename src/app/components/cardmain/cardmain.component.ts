@@ -20,11 +20,13 @@ export class CardmainComponent {
   }
   captureOptionNumber(numberO: string) {
     this.pruebaNumero = numberO;
-    // console.log(this.pruebaNumero);
   }
 
   onSubmit() {
-    console.log(this.pruebaNumero);
-    this.router.navigate(['/secondary', this.pruebaNumero]);
+    if (this.pruebaNumero) {
+      this.router.navigate(['/secondary', this.pruebaNumero]);
+    } else {
+      this.router.navigate(['/secondary']);
+    }
   }
 }
