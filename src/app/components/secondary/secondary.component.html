@@ -3,10 +3,13 @@
     <img src="assets/illustration-thank-you.svg" alt="secondImage" />
   </figure>
   <div>
-    <span> You selected {{numberOptionSelected}} out of 5</span>
+    <span> You selected {{ numberOptionSelected }} out of 5</span>
   </div>
   <div>
-   <app-text       [textTitleChildren]="textTitleFather"
-   [textParagraphChildren]="textParagraphFather"></app-text>
+    <app-text
+      [textTitleChildren]="textTitleFather"
+      [textParagraphChildren]="textParagraphFather"
+      [ngStyle]="{'text-align': 'center'}"
+    ></app-text>
   </div>
 </section>
