@@ -11,7 +11,7 @@ export class CardmainComponent {
   typeButton: string = 'button';
   typeImage: string = 'image';
   typesubmit: string = 'submit';
-  inputImg: string = '../../../assets/icon-star.svg';
+  inputImg: string = 'assets/icon-star.svg';
   pruebaNumero!: string;
   textTitleFather: string = 'How did we do?'
   textParagraphFather: string = 'Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!'
